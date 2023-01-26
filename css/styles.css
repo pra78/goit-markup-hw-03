@@ -1,0 +1,137 @@
+:root {
+    --navy-blue-color: #2E2F42;
+    --slate-color: #434455;
+    --white-color: #FFFFFF;
+    --iris-color: #4D5AE5;
+    --cloud-color: #F4F4FD;
+    --ocean-color: #404BBF;
+    --cornflower-color: #E7E9FC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* ========= Components ========= */
+.list {
+    list-style: none;
+}
+
+.bgc {
+    background-color: var(--navy-blue-color);
+}
+
+.section-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: var(--navy-blue-color);
+}
+
+.list-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--navy-blue-color);
+}
+
+.list-text {
+    color: var(--slate-color);
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--ocean-color);
+}
+
+.filter-button {
+    background-color: var(--cloud-color);
+    color: var(--iris-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--white-color);
+}
+
+/* ========= Logo ========= */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: var(--navy-blue-color);
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.web-logo {
+    color: var(--iris-color);
+}
+
+/* ========= Header ========= */
+.menu .link {
+    color: var(--navy-blue-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact .link {
+    color: var(--slate-color);
+    text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus,
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--ocean-color);
+}
+
+/* ========= Hero ========= */
+.hero-title {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.button-order {
+    background-color: var(--iris-color);
+    color: var(--white-color);
+}
+
+/* ========= Footer ========= */
+.footer {
+    line-height: 1.17;
+    color: var(--cloud-color);
+}
+
+.footer-text {
+    letter-spacing: 0.02em;
+
+    color: var(--cornflower-color);
+}
+
+.projects .link {
+    text-decoration: none;
+}
