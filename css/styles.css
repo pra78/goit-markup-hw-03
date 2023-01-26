@@ -8,6 +8,11 @@
     --cornflower-color: #E7E9FC;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate-color);
@@ -17,7 +22,27 @@ body {
 }
 
 /* ========= Components ========= */
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    outline: 2px solid tomato;
+}
+
+.section {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 120px;
+}
+
 .list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
 }
 
@@ -36,6 +61,8 @@ body {
 }
 
 .list-header {
+    margin-bottom: 8px;
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -75,6 +102,8 @@ body {
 
 /* ========= Logo ========= */
 .logo {
+    margin-right: 76px;
+
     font-family: 'Raleway', sans-serif;
     color: var(--navy-blue-color);
     font-size: 18px;
@@ -88,6 +117,27 @@ body {
 }
 
 /* ========= Header ========= */
+.main-header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid var(--cornflower-color);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+
 .menu .link {
     color: var(--navy-blue-color);
     font-weight: 500;
@@ -108,6 +158,12 @@ body {
 
 /* ========= Hero ========= */
 .hero-title {
+    width: 494px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    padding-top: 188px;
+
     color: var(--white-color);
     font-weight: 700;
     font-size: 56px;
@@ -116,8 +172,22 @@ body {
 }
 
 .button-order {
+    margin-bottom: 188px;
+    padding: 16px 32px;
+    border-radius: 4px;
+
     background-color: var(--iris-color);
     color: var(--white-color);
+}
+
+/* ========= Advantages ========= */
+.advantages {
+    display: flex;
+    text-align: left;
+}
+
+.advantages-item:not(:last-of-type) {
+    margin-right: 24px;
 }
 
 /* ========= Footer ========= */
