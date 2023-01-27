@@ -30,7 +30,7 @@ body {
     padding-right: 15px;
     text-align: center;
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .section {
@@ -54,15 +54,18 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+
+    margin-bottom: 72px;
 
     color: var(--navy-blue-color);
 }
 
 .list-header {
     margin-bottom: 8px;
-    
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -119,10 +122,11 @@ body {
 /* ========= Header ========= */
 .main-header {
     display: flex;
+    box-sizing: border-box;
     padding-top: 24px;
     padding-bottom: 24px;
 
-    border-bottom: 1px solid var(--cornflower-color);
+    border-bottom: 1px, solid var(--cornflower-color);
 }
 
 .menu {
@@ -157,23 +161,28 @@ body {
 }
 
 /* ========= Hero ========= */
+.hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .hero-title {
     width: 494px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    padding-top: 188px;
 
     color: var(--white-color);
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 1.071;
     text-align: center;
+    /* letter-spacing: 0.02em; */
 }
 
 .button-order {
-    margin-bottom: 188px;
     padding: 16px 32px;
+    border: 0;
     border-radius: 4px;
 
     background-color: var(--iris-color);
@@ -186,22 +195,80 @@ body {
     text-align: left;
 }
 
+.advantages-item {
+    width: 264px;
+}
+
 .advantages-item:not(:last-of-type) {
     margin-right: 24px;
 }
 
+/* ========= Work Examples ========= */
+.examples-section {
+    margin-bottom: 120px;
+}
+
+.examples-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-gap {
+    display: block;
+}
+
+/* ========= Our Team ========= */
+.team-section {
+    background-color: var(--cloud-color);
+    padding-top: 0;
+}
+
+.team-header {
+    padding-top: 120px;
+}
+
+.team-member-card {
+    background-color: var(--white-color);
+}
+
+.team-list {
+    display: flex;
+    padding-bottom: 120px;
+    justify-content: space-between;
+}
+
+.team-member-details {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
 /* ========= Footer ========= */
+.footer-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer {
+    width: 264px;
+
+    text-align: left;
+}
+
+.footer-logo {
     line-height: 1.17;
     color: var(--cloud-color);
 }
 
 .footer-text {
-    letter-spacing: 0.02em;
+    margin-top: 16px;
+    /* letter-spacing: 0.02em; */
 
     color: var(--cornflower-color);
 }
 
+/* ========= Portfolio ========= */
 .projects .link {
     text-decoration: none;
 }
